@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "65370e6ad0baee39d00b9c41"
+  },
+  "Codigo": 11,
+  "Nombre": "Raton",
+  "Precio": 9,
+  "Fabricante": {
+    "$oid": "65368e85a71d7bfe4eb3e082"
+  }
+},
+{
+  "_id": {
+    "$oid": "65370e6ad0baee39d00b9c42"
+  },
+  "Codigo": 12,
+  "Nombre": "Pantalla",
+  "Precio": 99,
+  "Fabricante": {
+    "$oid": "65368e85a71d7bfe4eb3e083"
+  }
+},
+{
+  "_id": {
+    "$oid": "65370e6ad0baee39d00b9c43"
+  },
+  "Codigo": 13,
+  "Nombre": "CPU",
+  "Precio": 24,
+  "Fabricante": {
+    "$oid": "65368e85a71d7bfe4eb3e084"
+  }
+},
+{
+  "_id": {
+    "$oid": "65370e6ad0baee39d00b9c44"
+  },
+  "Codigo": 14,
+  "Nombre": "RAM",
+  "Precio": 24,
+  "Fabricante": {
+    "$oid": "65368e85a71d7bfe4eb3e085"
+  }
+}]

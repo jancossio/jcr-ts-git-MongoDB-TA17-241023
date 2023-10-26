@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "65396a569dff93cd35939e80"
+  },
+  "Codigo": 1,
+  "Lugar": "Tarragona",
+  "Capacidad": 120
+},
+{
+  "_id": {
+    "$oid": "65396a569dff93cd35939e81"
+  },
+  "Codigo": 2,
+  "Lugar": "Barcelona",
+  "Capacidad": 90
+},
+{
+  "_id": {
+    "$oid": "65396a569dff93cd35939e82"
+  },
+  "Codigo": 3,
+  "Lugar": "Lleida",
+  "Capacidad": 100
+},
+{
+  "_id": {
+    "$oid": "65396a569dff93cd35939e83"
+  },
+  "Codigo": 4,
+  "Lugar": "Girona",
+  "Capacidad": 115
+}]

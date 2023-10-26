@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6536f191d0baee39d00b9c15"
+  },
+  "Codigo": 1,
+  "Nombre": "Facultad de Geologia"
+},
+{
+  "_id": {
+    "$oid": "6536f191d0baee39d00b9c16"
+  },
+  "Codigo": 2,
+  "Nombre": "Facultad de Sismologia"
+},
+{
+  "_id": {
+    "$oid": "6536f191d0baee39d00b9c17"
+  },
+  "Codigo": 3,
+  "Nombre": "facultad de Fisica"
+},
+{
+  "_id": {
+    "$oid": "6536f191d0baee39d00b9c18"
+  },
+  "Codigo": 4,
+  "Nombre": "facultad de Quimica"
+}]

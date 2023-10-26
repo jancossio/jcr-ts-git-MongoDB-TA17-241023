@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6536a558d0baee39d00b9be5"
+  },
+  "Codigo": 1,
+  "Nombre": "Indiana Jones",
+  "CalificacionEdad": 13
+},
+{
+  "_id": {
+    "$oid": "6536a558d0baee39d00b9be6"
+  },
+  "Codigo": 2,
+  "Nombre": "Tiburon",
+  "CalificacionEdad": 18
+},
+{
+  "_id": {
+    "$oid": "6536a558d0baee39d00b9be7"
+  },
+  "Codigo": 3,
+  "Nombre": "Toy Story",
+  "CalificacionEdad": 3
+},
+{
+  "_id": {
+    "$oid": "6536a558d0baee39d00b9be8"
+  },
+  "Codigo": 4,
+  "Nombre": "Star Wars",
+  "CalificacionEdad": 7
+}]

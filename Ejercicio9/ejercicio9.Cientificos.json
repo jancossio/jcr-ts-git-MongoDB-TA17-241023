@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6539705f9dff93cd35939e94"
+  },
+  "DNI": "1432HU98",
+  "NomApels": "Jordi Ribe"
+},
+{
+  "_id": {
+    "$oid": "6539705f9dff93cd35939e95"
+  },
+  "DNI": "1423KI66",
+  "NomApels": "Hugo Lopez"
+},
+{
+  "_id": {
+    "$oid": "6539705f9dff93cd35939e96"
+  },
+  "DNI": "4132GY45",
+  "NomApels": "Pablo Hernandez"
+},
+{
+  "_id": {
+    "$oid": "6539705f9dff93cd35939e97"
+  },
+  "DNI": "4123HY28",
+  "NomApels": "Julio Toledo"
+}]

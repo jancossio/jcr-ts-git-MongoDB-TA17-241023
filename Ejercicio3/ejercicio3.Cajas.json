@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "65396a719dff93cd35939e84"
+  },
+  "NumReferencia": "BBABB",
+  "Contenido": "Carteras",
+  "Valor": 6.99,
+  "Almacen": {
+    "$oid": "6536a079d0baee39d00b9bdd"
+  }
+},
+{
+  "_id": {
+    "$oid": "65396a719dff93cd35939e85"
+  },
+  "NumReferencia": "MCCBO",
+  "Contenido": "Abrigos",
+  "Valor": 67.99,
+  "Almacen": {
+    "$oid": "6536a079d0baee39d00b9bde"
+  }
+},
+{
+  "_id": {
+    "$oid": "65396a719dff93cd35939e86"
+  },
+  "NumReferencia": "HUYAN",
+  "Contenido": "Pegatinas",
+  "Valor": 1.99,
+  "Almacen": {
+    "$oid": "6536a079d0baee39d00b9bdf"
+  }
+},
+{
+  "_id": {
+    "$oid": "65396a719dff93cd35939e87"
+  },
+  "NumReferencia": "C3PO",
+  "Contenido": "Zapatos",
+  "Valor": 15.95,
+  "Almacen": {
+    "$oid": "6536a079d0baee39d00b9be0"
+  }
+}]

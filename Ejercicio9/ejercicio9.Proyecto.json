@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "653970329dff93cd35939e90"
+  },
+  "Id": "AABA",
+  "Nombre": "Proyecto de Geologia",
+  "Horas": 180
+},
+{
+  "_id": {
+    "$oid": "653970329dff93cd35939e91"
+  },
+  "Id": "AACA",
+  "Nombre": "Proyecto de Sismologia",
+  "Horas": 200
+},
+{
+  "_id": {
+    "$oid": "653970329dff93cd35939e92"
+  },
+  "Id": "AADA",
+  "Nombre": "Proyecto de Fisica",
+  "Horas": 210
+},
+{
+  "_id": {
+    "$oid": "653970329dff93cd35939e93"
+  },
+  "Id": "AAFA",
+  "Nombre": "Proyecto de Quimica",
+  "Horas": 190
+}]

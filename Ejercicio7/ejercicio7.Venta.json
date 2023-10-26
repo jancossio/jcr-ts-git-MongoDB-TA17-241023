@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6536ba17d0baee39d00b9c11"
+  },
+  "CodigoCajero": "6536b68ad0baee39d00b9c06",
+  "CodigoMaquina": "6536b6f9d0baee39d00b9c09",
+  "CodigoProducto": "6536b8abd0baee39d00b9c0d"
+},
+{
+  "_id": {
+    "$oid": "6536ba17d0baee39d00b9c12"
+  },
+  "CodigoCajero": "6536b68ad0baee39d00b9c07",
+  "CodigoMaquina": "6536b6f9d0baee39d00b9c0a",
+  "CodigoProducto": "6536b8abd0baee39d00b9c0e"
+},
+{
+  "_id": {
+    "$oid": "6536ba17d0baee39d00b9c13"
+  },
+  "CodigoCajero": "6536b68ad0baee39d00b9c08",
+  "CodigoMaquina": "6536b6f9d0baee39d00b9c0b",
+  "CodigoProducto": "6536b8abd0baee39d00b9c0f"
+},
+{
+  "_id": {
+    "$oid": "6536ba17d0baee39d00b9c14"
+  },
+  "CodigoCajero": "6536b68ad0baee39d00b9c05",
+  "CodigoMaquina": "6536b6f9d0baee39d00b9c0c",
+  "CodigoProducto": "6536b8abd0baee39d00b9c10"
+}]

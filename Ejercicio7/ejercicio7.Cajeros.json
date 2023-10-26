@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "6536b68ad0baee39d00b9c05"
+  },
+  "Codigo": 1,
+  "NomApels": "Ester Luengo"
+},
+{
+  "_id": {
+    "$oid": "6536b68ad0baee39d00b9c06"
+  },
+  "Codigo": 2,
+  "nomApels": "Javier Camelas"
+},
+{
+  "_id": {
+    "$oid": "6536b68ad0baee39d00b9c07"
+  },
+  "Codigo": 3,
+  "NomApels": "David Exposito"
+},
+{
+  "_id": {
+    "$oid": "6536b68ad0baee39d00b9c08"
+  },
+  "Codigo": 4,
+  "NomApels": "Leire Andres"
+}]

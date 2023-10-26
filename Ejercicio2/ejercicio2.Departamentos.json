@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "653968409dff93cd35939e78"
+  },
+  "Codigo": 1,
+  "Nombre": "I+D",
+  "Presupuesto": 4500
+},
+{
+  "_id": {
+    "$oid": "653968409dff93cd35939e79"
+  },
+  "Codigo": 2,
+  "Nombre": "Recursos Humanos",
+  "Presupuesto": 5500
+},
+{
+  "_id": {
+    "$oid": "653968409dff93cd35939e7a"
+  },
+  "Codigo": 3,
+  "Nombre": "Marketing",
+  "Presupuesto": 6500
+},
+{
+  "_id": {
+    "$oid": "653968409dff93cd35939e7b"
+  },
+  "Codigo": 4,
+  "Nombre": "Desarrollo",
+  "Presupuesto": 1500
+}]

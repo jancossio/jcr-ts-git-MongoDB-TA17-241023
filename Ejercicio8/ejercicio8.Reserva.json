@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "6536fa92d0baee39d00b9c21"
+  },
+  "DNI": "6536f59cd0baee39d00b9c1d",
+  "NumSerie": "6536f2c7d0baee39d00b9c19",
+  "Comienzo": {
+    "$date": "2023-10-23T00:00:00.000Z"
+  },
+  "Fin": {
+    "$date": "2023-12-31T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fa92d0baee39d00b9c22"
+  },
+  "DNI": "6536f59cd0baee39d00b9c1e",
+  "NumSerie": "6536f2c7d0baee39d00b9c1a",
+  "Comienzo": {
+    "$date": "2023-10-15T00:00:00.000Z"
+  },
+  "Fin": {
+    "$date": "2015-10-30T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fa92d0baee39d00b9c23"
+  },
+  "DNI": "6536f59cd0baee39d00b9c1f",
+  "NumSerie": "6536f2c7d0baee39d00b9c1b",
+  "Comienzo": {
+    "$date": "2023-11-15T00:00:00.000Z"
+  },
+  "Fin": {
+    "$date": "2015-11-18T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fa92d0baee39d00b9c24"
+  },
+  "DNI": "6536f59cd0baee39d00b9c20",
+  "NumSerie": "6536f2c7d0baee39d00b9c1c",
+  "Comienzo": {
+    "$date": "2023-12-23T00:00:00.000Z"
+  },
+  "Fin": {
+    "$date": "2015-12-31T00:00:00.000Z"
+  }
+}]

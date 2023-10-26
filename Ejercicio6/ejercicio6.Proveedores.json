@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65396dae9dff93cd35939e88"
+  },
+  "Codigo": "AAAA",
+  "Nombre": "PiezasSueltas.sa"
+},
+{
+  "_id": {
+    "$oid": "65396dae9dff93cd35939e89"
+  },
+  "Codigo": "AAAB",
+  "Nombre": "TornillosAnonimos"
+},
+{
+  "_id": {
+    "$oid": "65396dae9dff93cd35939e8a"
+  },
+  "Codigo": "AAAC",
+  "Nombre": "Tuercas sin fronteras"
+},
+{
+  "_id": {
+    "$oid": "65396dae9dff93cd35939e8b"
+  },
+  "Codigo": "AAAD",
+  "Nombre": "Carpinteria.sl"
+}]

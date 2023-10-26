@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6536fc7cd0baee39d00b9c29"
+  },
+  "NumSerie": "AAGA",
+  "Nombre": "Equipo de Geologia",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c15"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fc7cd0baee39d00b9c2a"
+  },
+  "NumSerie": "AAHA",
+  "Nombre": "Equipo de Sismologia",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c16"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fc7cd0baee39d00b9c2b"
+  },
+  "NumSerie": "AAIA",
+  "Nombre": "Equipo de Fisica",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c17"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fc7cd0baee39d00b9c2c"
+  },
+  "NumSerie": "AAJA",
+  "Nombre": "Equipo de Quimica",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c18"
+  }
+}]

@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6536b8abd0baee39d00b9c0d"
+  },
+  "Codigo": 1,
+  "Nombre": "Tostador",
+  "Precio": 20
+},
+{
+  "_id": {
+    "$oid": "6536b8abd0baee39d00b9c0e"
+  },
+  "Codigo": 2,
+  "Nombre": "Persiana",
+  "Precio": 27
+},
+{
+  "_id": {
+    "$oid": "6536b8abd0baee39d00b9c0f"
+  },
+  "Codigo": 3,
+  "Nombre": "Portatil",
+  "Precio": 899
+},
+{
+  "_id": {
+    "$oid": "6536b8abd0baee39d00b9c10"
+  },
+  "Codigo": 4,
+  "Nombre": "Detergente",
+  "Precio": 12
+}]

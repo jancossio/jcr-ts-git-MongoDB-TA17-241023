@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6536af8cd0baee39d00b9bf1"
+  },
+  "DNI": "2436457G",
+  "NomApels": "Aitor Menta",
+  "DNIJefe": "",
+  "Despacho": "6536abbbd0baee39d00b9bed"
+},
+{
+  "_id": {
+    "$oid": "6536af8cd0baee39d00b9bf2"
+  },
+  "DNI": "1234567Y",
+  "NomAples": "Helena Mora",
+  "DNIJefe": "2436457G",
+  "Despacho": "6536abbbd0baee39d00b9bee"
+},
+{
+  "_id": {
+    "$oid": "6536af8cd0baee39d00b9bf3"
+  },
+  "DNI": "9874512U",
+  "NomApels": "David Luengo",
+  "DNIJefe": "1234567Y",
+  "Despacho": "6536abbbd0baee39d00b9bef"
+},
+{
+  "_id": {
+    "$oid": "6536af8cd0baee39d00b9bf4"
+  },
+  "DNI": "1928374T",
+  "NomApels": "Lucas Aleman",
+  "DNIJefe": "9874512U",
+  "Despacho": "6536abbbd0baee39d00b9bf0"
+}]

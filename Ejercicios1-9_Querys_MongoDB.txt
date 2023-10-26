@@ -1,0 +1,302 @@
+use ejercicio1
+
+db.createCollection("Fabricantes")
+
+db.Fabricantes.insertMany([
+{Codigo:1, Nombre:"Los informaticos"}, 
+{Codigo:2, Nombre:"Componentes"}, 
+{Codigo:3, Nombre:"Ratones y otras piezas"}, 
+{Codigo:4, Nombre:"Placabase"}])
+
+db.createCollection("Articulos")
+
+db.Articulos.insertMany([
+{Codigo:11, Nombre:"Raton", Precio:9, Fabricante:ObjectId("65368e85a71d7bfe4eb3e082")}, 
+{Codigo:12, Nombre:"Pantalla", Precio:99, Fabricante:ObjectId("65368e85a71d7bfe4eb3e083")}, 
+{Codigo:13, Nombre:"CPU", Precio:24, Fabricante:ObjectId("65368e85a71d7bfe4eb3e084")}, 
+{Codigo:14, Nombre:"RAM", Precio:24, Fabricante:ObjectId("65368e85a71d7bfe4eb3e085")}])
+
+-X-X-X-Comandos de queries-X-X-X-X-
+
+db.Fabricantes.find({"Nombre":"Placabase"})
+db.Articulos.find({"Precio":{$gte:24}})
+db.Articulos.find().sort({"Precio":-1}).limit(3)
+db.Fabricantes.update({Nombre:"Los informaticos"},{$set:{Nombre:"Los informaticos.sa"}})
+
+---------------------------------------------------------------------------------------------
+
+use ejercicio2
+switched to db ejercicio2
+db.createCollection("Departamentos")
+
+db.createCollection("Empleados")
+
+db.Departamentos.insertMany([
+{Codigo:1, Nombre:"I+D", Presupuesto:4500}, 
+{Codigo:2, Nombre:"Recursos Humanos", Presupuesto:5500}, 
+{Codigo:3, Nombre:"Marketing", Presupuesto:6500}, 
+{Codigo:4, Nombre:"Desarrollo", Presupuesto:1500}])
+
+db.Empleados.insertMany([
+{DNI:"9876FG32", Nombre:"Aitor", Apellidos:"Menta", Departamento:ObjectId("653968409dff93cd35939e78")}, 
+{DNI:"9687RF45", Nombre:"Pablo", Apellidos:"Lopez", Departamento:ObjectId("653968409dff93cd35939e79")}, 
+{DNI:"41232HU7", Nombre:"Martin", Apellidos:"Perez", Departamento:ObjectId("653968409dff93cd35939e7a")},
+{DNI:"78678GT5", Nombre:"Matias", Apellidos:"Fernandez", Departamento:ObjectId("653968409dff93cd35939e7b")}]) 
+
+-X-X-X-Comandos de queries-X-X-X-X-
+
+db.Empleados.find({DNI:"9876FG32"})
+db.Empleados.update({DNI:"9876FG32"},{$set:{Apellidos:"Tilla"}})
+db.Departamentos.find({"Presupuesto":{$lte:2000}}).sort({"Presupuesto":1}).limit(1)
+db.Departamentos.update({Nombre:"I+D"},{$set:{Nombre:"Investigacion"}})
+
+
+------------------------------------------------------------------------------------------------
+
+use ejercicio3
+switched to db ejercicio3
+db.createCollection("Almacenes")
+
+db.Almacenes.insertMany([
+{Codigo:1, Lugar:"Tarragona", Capacidad:120}, 
+{Codigo:2, Lugar:"Barcelona", Capacidad:90},
+ 
+{Codigo:3, Lugar:"Lleida", Capacidad:100}, 
+{Codigo:4, Lugar:"Girona", Capacidad:115}])
+
+db.createCollection("Cajas")
+
+db.Cajas.insertMany([
+{NumReferencia:"BBABB", Contenido:"Carteras", Valor:6.99, Almacen:ObjectId("6536a079d0baee39d00b9bdd")},
+{NumReferencia:"MCCBO", Contenido:"Abrigos", Valor:67.99, Almacen:ObjectId("6536a079d0baee39d00b9bde")},
+{NumReferencia:"HUYAN", Contenido:"Pegatinas", Valor:1.99, Almacen:ObjectId("6536a079d0baee39d00b9bdf")},
+{NumReferencia:"C3PO", Contenido:"Zapatos", Valor:15.95, Almacen:ObjectId("6536a079d0baee39d00b9be0")}
+  ])
+
+db.Almacenes.find({Codigo:2})
+db.Almacenes.find({Lugar:"Lleida"})
+db.Almacenes.find({"Capacidad":{$lte:100}}).sort({"Capacidad":1})
+db.Cajas.remove({NumReferencia:"C3PO"})
+
+
+-----------------------------------------------------------------------------------------------
+
+use ejercicio4
+switched to db ejercicio4
+db.createCollection("Peliculas")
+
+db.Peliculas.insertMany([
+{"Codigo":1, "Nombre":"Indiana Jones", "CalificacionEdad":13},
+{"Codigo":2, "Nombre":"Tiburon", "CalificacionEdad":18},
+{"Codigo":3, "Nombre":"Toy Story", "CalificacionEdad":3},
+{"Codigo":4, "Nombre":"Star Wars", "CalificacionEdad":7}
+  ])
+
+db.createCollection("Salas")
+
+db.Salas.insertMany([
+{Codigo:1, Nombre:"Sala 1", Pelicula:ObjectId("6536a558d0baee39d00b9be5")},
+{Codigo:2, Nombre:"Sala 2", Pelicula:ObjectId("6536a558d0baee39d00b9be6")},
+{Codigo:3, Nombre:"Sala 3", Pelicula:ObjectId("6536a558d0baee39d00b9be7")},
+{Codigo:4, Nombre:"Sala 4", Pelicula:ObjectId("6536a558d0baee39d00b9be8")}
+  ])
+
+db.Peliculas.find({"Nombre":{$ne:"Tiburon"}})
+db.Peliculas.find({"CalificacionEdad":{$gte:13}}).sort({"CalificacionEdad":-1})
+db.Peliculas.update({Codigo:3},{$set:{CalificacionEdad:7}})
+
+
+-------------------------------------------------------
+
+use ejercicio5
+switched to db ejercicio5
+db.createCollection("Despachos")
+
+db.Despachos.insertMany([
+  {"Numero":1, "Capacidad":2},
+  {"Numero":2, "Capacidad":3},
+  {"Numero":3, "Capacidad":2},
+  {"Numero":4, "Capacidad":4}
+])
+
+db.createCollection("Directores")
+
+db.Directores.insertMany([
+  {DNI:"2436457G", NomApels:"Aitor Menta", DNIJefe:"", Despacho:ObjectId("6536abbbd0baee39d00b9bed")},
+  {DNI:"1234567Y", NomAples:"Helena Mora", DNIJefe:"2436457G", Despacho:ObjectId("6536abbbd0baee39d00b9bee")},
+  {DNI:"9874512U", NomApels:"David Luengo", DNIJefe:"1234567Y", Despacho:ObjectId("6536abbbd0baee39d00b9bef")},
+  {DNI:"1928374T", NomApels:"Lucas Aleman", DNIJefe:"9874512U", Despacho:ObjectId("6536abbbd0baee39d00b9bf0")}
+  ])
+
+db.Despachos.update({Numero:4},{$set:{Capacidad:5}})
+db.Directores.update({DNI:"2436457G"},{$set:{DNIJefe:"1928374T"}})
+db.Directores.remove({DNI:"9874512U"})
+
+--------------------------------------------------------
+
+use ejercicio6
+switched to db ejercicio6
+
+db.createCollection("Piezas")
+
+db.createCollection("Proveedores")
+
+
+{ ok: 1 }
+db.Piezas.insertMany([
+{Codigo:1, Nombre:"Tuerca"},
+{Codigo:2, Nombre:"Tornillo"},
+{Codigo:3, Nombre:"Taco"},
+{Codigo:4, Nombre:"junta"}
+])
+
+db.Proveedores.insertMany([
+{Codigo:"AAAA", Nombre:"PiezasSueltas.sa"},
+{Codigo:"AAAB", Nombre:"TornillosAnonimos"},
+{Codigo:"AAAC", Nombre:"Tuercas sin fronteras"},
+{Codigo:"AAAD", Nombre:"Carpinteria.sl"}
+])
+
+db.createCollection("Suministra")
+
+db.Suministra.insertMany([
+{CodigoPieza:ObjectId("6536b25ed0baee39d00b9bf5"), IdProveedor:ObjectId("65396dae9dff93cd35939e88"), Precio:"21.99"},
+{CodigoPieza:ObjectId("6536b25ed0baee39d00b9bf6"), IdProveedor:ObjectId("65396dae9dff93cd35939e89"), Precio:"18.80"},
+{CodigoPieza:ObjectId("6536b25ed0baee39d00b9bf7"), IdProveedor:ObjectId("65396dae9dff93cd35939e8a"), Precio:"17.95"},
+{CodigoPieza:ObjectId("6536b25ed0baee39d00b9bf8"), IdProveedor:ObjectId("65396dae9dff93cd35939e8b"), Precio:"16.90"}
+])
+
+db.Piezas.find({Nombre:"Tuerca"})
+db.Proveedores.update({Codigo:"AAAA"},{$set:{Nombre:"Maestros de la madera"}})
+db.Suministra.remove({CodigoPieza:ObjectId("6536b25ed0baee39d00b9bf8")},{IdProveedor:ObjectId("65396dae9dff93cd35939e8b")})
+
+---------------------------------------------------------------
+
+use ejercicio7
+switched to db ejercicio7
+
+db.createCollection("Cajeros")
+
+db.Cajeros.insertMany([
+{Codigo:1, NomApels:"Ester Luengo"},
+{Codigo:2, nomApels:"Javier Camelas"},
+{Codigo:3, NomApels:"David Exposito"},
+{Codigo:4, NomApels:"Leire Andres"}
+])
+
+db.createCollection("Maquinas_Registradoras")
+
+db.Maquinas_Registradoras.insertMany([
+{Codigo:1, Piso:2},
+{Codigo:2, Piso:2},
+{Codigo:3, Piso:3},
+{Codigo:4, Piso:3}
+])
+
+db.createCollection("Productos")
+
+db.Productos.insertMany([
+{Codigo:1, Nombre:"Tostador", Precio:20},
+{Codigo:2, Nombre:"Persiana", Precio:27},
+{Codigo:3, Nombre:"Portatil", Precio:899},
+{Codigo:4, Nombre:"Detergente", Precio:12}
+  ])
+
+db.createCollection("Venta")
+
+db.Venta.insertMany([
+{CodigoCajero:ObjectId("6536b68ad0baee39d00b9c06"), CodigoMaquina:ObjectId("6536b6f9d0baee39d00b9c09"), CodigoProducto:ObjectId("6536b8abd0baee39d00b9c0d")},
+{CodigoCajero:ObjectId("6536b68ad0baee39d00b9c07"), CodigoMaquina:ObjectId("6536b6f9d0baee39d00b9c0a"), CodigoProducto:ObjectId("6536b8abd0baee39d00b9c0e")},
+{CodigoCajero:ObjectId("6536b68ad0baee39d00b9c08"), CodigoMaquina:ObjectId("6536b6f9d0baee39d00b9c0b"), CodigoProducto:ObjectId("6536b8abd0baee39d00b9c0f")},
+{CodigoCajero:ObjectId("6536b68ad0baee39d00b9c05"), CodigoMaquina:ObjectId("6536b6f9d0baee39d00b9c0c"), CodigoProducto:ObjectId("6536b8abd0baee39d00b9c10")}
+  ])
+
+db.Cajeros.find({Codigo:2})
+db.Cajeros.update({Codigo:2},{$set:{nomApels:"Antonio Camelas"}})
+db.Maquinas_Registradoras.remove({Codigo:2})
+db.Venta.remove({CodigoCajero:"6536b68ad0baee39d00b9c05"},{CodigoMaquina:"6536b6f9d0baee39d00b9c0c"},{CodigoProducto:"6536b8abd0baee39d00b9c10"})
+
+
+
+
+--------------------------------------------------------------
+
+use ejercicio8
+switched to db ejercicio8
+
+db.createCollection("Facultad")
+
+db.Facultad.insertMany([
+{Codigo:1, Nombre:"Facultad de Geologia"},
+{Codigo:2, Nombre:"Facultad de Sismologia"},
+{Codigo:3, Nombre:"facultad de Fisica"},
+{Codigo:4, Nombre:"facultad de Quimica"}
+])
+
+db.createCollection("Equipos")
+
+db.Equipos.insertMany([
+{NumSerie:"AAGA", Nombre:"Equipo de Geologia", Facultad:ObjectId("6536f191d0baee39d00b9c15")},
+{NumSerie:"AAHA", Nombre:"Equipo de Sismologia", Facultad:ObjectId("6536f191d0baee39d00b9c16")},
+{NumSerie:"AAIA", Nombre:"Equipo de Fisica", Facultad:ObjectId("6536f191d0baee39d00b9c17")},
+{NumSerie:"AAJA", Nombre:"Equipo de Quimica", Facultad:ObjectId("6536f191d0baee39d00b9c18")}
+])
+
+db.createCollection("Investigadores")
+
+db.Investigadores.insertMany([
+{DNI:"5211TH67", NomApels:"Martin Segovia", Facultad:ObjectId("6536f191d0baee39d00b9c15")},
+{DNI:"4512KI99", NomApels:"Carlos Lastre", Facultad:ObjectId("6536f191d0baee39d00b9c16")},
+{DNI:"5313FM58", NomApels:"Ana Rivera", Facultad:ObjectId("6536f191d0baee39d00b9c17")},
+{DNI:"6214AS46", NomApels:"Ramona Jimenez", Facultad:ObjectId("6536f191d0baee39d00b9c18")}
+])
+
+db.createCollection("Reserva")
+
+db.Reserva.insertMany([
+{DNI:ObjectId("6536fba4d0baee39d00b9c25"), NumSerie:ObjectId("6536fc7cd0baee39d00b9c2a"), Comienzo:ISODate("2023-10-23T00:00:00Z"), Fin:ISODate("2023-12-31T00:00:00Z")},
+{DNI:ObjectId("6536fba4d0baee39d00b9c26"), NumSerie:ObjectId("6536fc7cd0baee39d00b9c2b"), Comienzo:ISODate("2023-10-15T00:00:00Z"), Fin:ISODate("2015-10-30T00:00:00Z")},
+{DNI:ObjectId("6536fba4d0baee39d00b9c27"), NumSerie:ObjectId("6536fc7cd0baee39d00b9c2c"), Comienzo:ISODate("2023-11-15T00:00:00Z"), Fin:ISODate("2015-11-18T00:00:00Z")},
+{DNI:ObjectId("6536fba4d0baee39d00b9c28"), NumSerie:ObjectId("6536fc7cd0baee39d00b9c29"), Comienzo:ISODate("2023-12-23T00:00:00Z"), Fin:ISODate("2015-12-31T00:00:00Z")}
+])
+
+db.Equipos.remove({NumSerie:"AAGA"})
+db.Investigadores.find({DNI:"4512KI99"}})
+db.Investigadores.update({DNI:"4512KI99"},{$set:{Facultad:ObjectId("6536f191d0baee39d00b9c15")}})
+db.Venta.remove({CodigoCajero:"6536b68ad0baee39d00b9c05"},{CodigoMaquina:"6536b6f9d0baee39d00b9c0c"},{CodigoProducto:"6536b8abd0baee39d00b9c10"})
+
+------------------------------------------------------------------------------------
+
+use ejercicio9
+switched to db ejercicio9
+db.createCollection("Proyecto")
+
+db.Proyecto.insertMany([
+{Id:"AABA", Nombre:"Proyecto de Geologia", Horas:180},
+{Id:"AACA", Nombre:"Proyecto de Sismologia", Horas:200},
+{Id:"AADA", Nombre:"Proyecto de Fisica", Horas:210},
+{Id:"AAFA", Nombre:"Proyecto de Quimica", Horas:190}
+])
+
+db.createCollection("Cientificos")
+
+db.Cientificos.insertMany([
+{DNI:"1432HU98", NomApels:"Jordi Ribe"},
+{DNI:"1423KI66", NomApels:"Hugo Lopez"},
+{DNI:"4132GY45", NomApels:"Pablo Hernandez"},
+{DNI:"4123HY28", NomApels:"Julio Toledo"}
+])
+
+db.createCollection("Asignado_A")
+
+db.Asignado_A.insertMany([
+{Cientifico:ObjectId("6536ff7ad0baee39d00b9c31"), Proyecto:ObjectId("6537000dd0baee39d00b9c35")},
+{Cientifico:ObjectId("6536ff7ad0baee39d00b9c32"), Proyecto:ObjectId("6537000dd0baee39d00b9c36")},
+{Cientifico:ObjectId("6536ff7ad0baee39d00b9c33"), Proyecto:ObjectId("6537000dd0baee39d00b9c37")},
+{Cientifico:ObjectId("6536ff7ad0baee39d00b9c34"), Proyecto:ObjectId("6537000dd0baee39d00b9c38")}
+])
+
+db.Proyecto.find({Id:"AAFA"})
+db.Proyecto.find({"Capacidad":{$gte:200}}).sort({"Capacidad":-1})
+db.Cientificos.update({DNI:"1423KI66"},{$set:{Nombre:"Umberto Lopez"}})
+db.Asignado_A.remove({Cientifico:ObjectId("6536ff7ad0baee39d00b9c34")},{Proyecto:ObjectId("6537000dd0baee39d00b9c38")})

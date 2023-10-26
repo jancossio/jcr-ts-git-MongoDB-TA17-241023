@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6536fba4d0baee39d00b9c25"
+  },
+  "DNI": "5211TH67",
+  "NomApels": "Martin Segovia",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c15"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fba4d0baee39d00b9c26"
+  },
+  "DNI": "4512KI99",
+  "NomApels": "Carlos Lastre",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c16"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fba4d0baee39d00b9c27"
+  },
+  "DNI": "5313FM58",
+  "NomApels": "Ana Rivera",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c17"
+  }
+},
+{
+  "_id": {
+    "$oid": "6536fba4d0baee39d00b9c28"
+  },
+  "DNI": "6214AS46",
+  "NomApels": "Ramona Jimenez",
+  "Facultad": {
+    "$oid": "6536f191d0baee39d00b9c18"
+  }
+}]

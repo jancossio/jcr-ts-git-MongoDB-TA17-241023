@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65370e06d0baee39d00b9c3d"
+  },
+  "Codigo": 1,
+  "Nombre": "Los informaticos"
+},
+{
+  "_id": {
+    "$oid": "65370e06d0baee39d00b9c3e"
+  },
+  "Codigo": 2,
+  "Nombre": "Componentes"
+},
+{
+  "_id": {
+    "$oid": "65370e06d0baee39d00b9c3f"
+  },
+  "Codigo": 3,
+  "Nombre": "Ratones y otras piezas"
+},
+{
+  "_id": {
+    "$oid": "65370e06d0baee39d00b9c40"
+  },
+  "Codigo": 4,
+  "Nombre": "Placabase"
+}]
